@@ -3,6 +3,9 @@ package com.ome_r.paypalclient.requests;
 import com.ome_r.paypalclient.client.PaypalClient;
 import com.ome_r.paypalclient.response.GetTransactionDetailResponse;
 
+/**
+ * Represents the request of getting details about a transaction.
+ */
 public final class GetTransactionDetailsRequest extends Request<GetTransactionDetailResponse> {
 
     public GetTransactionDetailsRequest(PaypalClient client){

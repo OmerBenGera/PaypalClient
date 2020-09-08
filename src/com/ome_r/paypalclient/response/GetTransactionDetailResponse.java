@@ -4,6 +4,9 @@ import com.ome_r.paypalclient.utils.ResponseDeserializer;
 
 import java.util.Map;
 
+/**
+ * Represents the response containing all the information about a transaction.
+ */
 public final class GetTransactionDetailResponse extends Response {
 
     private final Map<String, String> transactionDetails;

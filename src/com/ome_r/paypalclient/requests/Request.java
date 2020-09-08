@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Abstract class to handle requests easily.
+ */
 public abstract class Request<T extends Response> {
 
     private final Map<String, String> parameters = new HashMap<>();

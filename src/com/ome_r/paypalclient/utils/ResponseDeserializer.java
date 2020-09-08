@@ -7,6 +7,12 @@ import java.util.Map;
 
 public final class ResponseDeserializer {
 
+    private ResponseDeserializer() { }
+
+    /**
+     * Deserialize the search transactions response into a list of responses.
+     * @param response The response from the API for a search request.
+     */
     public static List<String> deserializeSearchTransaction(String response){
         List<String> transactionIds = new ArrayList<>();
 
@@ -22,6 +28,10 @@ public final class ResponseDeserializer {
         return transactionIds;
     }
 
+    /**
+     * Deserialize the details of a transaction response into a map of all the information.
+     * @param response The response from the API for a get transaction detail request.
+     */
     public static Map<String, String> deserializeTransactionDetail(String response){
         Map<String, String> transactionDetail = new HashMap<>();
 

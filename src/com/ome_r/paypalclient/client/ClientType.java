@@ -1,5 +1,8 @@
 package com.ome_r.paypalclient.client;
 
+/**
+ * Used to determine the type of the client.
+ */
 public enum ClientType {
 
     LIVE("https://api-3t.paypal.com/nvp"),

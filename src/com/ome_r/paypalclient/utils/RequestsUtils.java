@@ -12,7 +12,15 @@ public final class RequestsUtils {
 
     private RequestsUtils() { }
 
-    public static String sendRequest(String _url, String _parameters) throws IOException {        Validator.nonNull(_url, "URL cannot be null.");
+    /**
+     * Making a request.
+     * @param _url The url to send the request to.
+     * @param _parameters The parameters (data) to send.
+     * @return The response that was retrieved from the request.
+     * @throws IOException Can throw error if request has failed.
+     */
+    public static String sendRequest(String _url, String _parameters) throws IOException {
+        Validator.nonNull(_url, "URL cannot be null.");
         URL url = new URL(_url);
 
         HttpsURLConnection connection = null;
