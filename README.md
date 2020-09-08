@@ -4,7 +4,7 @@ Simple client to check for resources of users based on emails
 ## How to use it?
 First of all, we need to create our paypal client instance.<br>
 In order to do so, we must know a few things: API username, password and signature.<br>
-This can be retreived by opening the [api-access](https://www.paypal.com/businessprofile/mytools/apiaccess/firstparty/signature) of paypal, and retrieving the credients.<br>
+This can be retreived by opening the [api-access](https://www.paypal.com/businessprofile/mytools/apiaccess/firstparty/signature) of paypal, and retrieving the credentials.<br>
 **Please note**: This works only for business accounts.<br>
 
 Now, we can create the client instance. We use the ClientBuilder object for that:<br>
